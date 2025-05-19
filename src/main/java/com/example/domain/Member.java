@@ -8,7 +8,7 @@ public class Member {
 
     private Integer age;
 
-    private Integer memberId;
+    private Integer departmentId;
 
     public Integer getId() {
         return id;
@@ -34,12 +34,12 @@ public class Member {
         this.age = age;
     }
 
-    public Integer getMemberId() {
-        return memberId;
+    public Integer getDepartmentId() {
+        return departmentId;
     }
 
-    public void setMemberId(Integer memberId) {
-        this.memberId = memberId;
+    public void setDepartmentId(Integer departmentId) {
+        this.departmentId = departmentId;
     }
 
     @Override
@@ -48,7 +48,7 @@ public class Member {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
-                ", memberId=" + memberId +
+                ", departmentId=" + departmentId +
                 '}';
     }
 }
