@@ -63,7 +63,7 @@ public class MemberRepository {
      */
     public Member save(Member member) {
         SqlParameterSource param = new BeanPropertySqlParameterSource(member);
-        if (member == null) { // ←正しい条件に修正する
+        if (member.getId() == null) { // ←正しい条件に修正する
 //            String insertSql = “ここにSQL文を書く“;
             String insertSql = "insert into members(id, name, age, departmentId)" +
                     "values(:name, :age, :departmentId)";
